@@ -53,13 +53,14 @@ a {
 }
 
 .welcome-container {
-  height: 10vh;
+  height: 20vh;
   margin: 0;
   padding: 0;
+  margin-left: 2%;
 }
 
 #welcome h1 {
-  font-size: 7rem;
+  font-size: 6rem;
   text-align: center;
 }
 
@@ -71,9 +72,10 @@ a {
 
 #welcome img {
   border-radius: 3%;
-  height: 60vh;
-  margin-top: 3%;
+  height: 70vh;
+  margin-top: 5%;
   margin-left: 10%;
+  margin-right: 3%;
 }
 
 .social-icons {
@@ -117,7 +119,7 @@ a {
   text-decoration: none;
   font-size: 1.6rem;
   padding: 0.5rem;
-  color:#e5e5e5;
+  color: #e5e5e5;
 }
 
 .sticky-nav a:hover {
