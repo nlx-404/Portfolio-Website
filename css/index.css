@@ -54,7 +54,7 @@ a {
 }
 
 .welcome-container {
-    height: 30vh;
+    height: 25vh;
     margin: 0;
     padding: 0;
 }
@@ -90,4 +90,13 @@ a {
 .social-icons a {
   color: #f4f4f4;
   text-decoration: none;
+}
+
+.social-icons a:hover {
+  color:#72becf;
+  zoom: 1.2;
+}
+
+#about-me {
+  margin-top: 200%;
 }
