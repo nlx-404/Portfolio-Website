@@ -99,10 +99,6 @@ a {
   zoom: 1.2;
 }
 
-#about-me {
-  margin-top: 200%;
-}
-
 .sticky-nav {
   position: fixed;
   bottom: 3%;
@@ -119,9 +115,109 @@ a {
   text-decoration: none;
   font-size: 1.6rem;
   padding: 0.5rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
   color: #e5e5e5;
 }
 
 .sticky-nav a:hover {
   color: #72becf;
+}
+
+#about-me {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 25vw;
+  padding-right: 25vw;
+  margin-bottom: 10%;
+}
+
+#about-me h1 {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+
+#about-me p {
+  font-size: 1.7rem;
+  text-align: center;
+  padding-top: 2vh;
+  line-height: 1.5;
+}
+
+#about-me b {
+  text-decoration: underline;
+}
+
+.cursor {
+  font-size: 2rem;
+  margin-left: 3px;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.prompt {
+  color: #72becf;
+}
+
+.terminal {
+  background-color: #1e1e1e; 
+  border-radius: 1.4rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  border: 0.3rem solid #333;
+  padding: 2rem;
+  position: relative;
+}
+
+.terminal-header {
+  background-color: #333;
+  display: flex;
+  padding: 0.5rem 1rem;
+  border-top-left-radius: 1.1rem;
+  border-top-right-radius: 1.1rem;
+  color: #fff;
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  right: 0;
+
+}
+
+.close-btn,
+.min-btn,
+.max-btn {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.close-btn {
+  background-color: #ff5f56;
+}
+
+.min-btn {
+  background-color: #ffbd2e; 
+}
+
+.max-btn {
+  background-color: #27c93f; 
+}
+
+.terminal-title {
+  font-size: 1rem;
+  margin-left: auto;
+  margin-right: auto; 
+  color: #ccc;
+  text-align: center;
+}
+
+.command {
+  color: #fff;
 }
