@@ -102,7 +102,7 @@ a {
 .sticky-nav {
   position: fixed;
   bottom: 3%;
-  left: 47%;
+  left: 44%;
   border: 0.2rem solid #e5e5e5;
   padding: 0.7%;
   background: linear-gradient(to bottom, #1b1c25, #1d1e27);
@@ -220,4 +220,61 @@ a {
 
 .command {
   color: #fff;
+}
+
+#my-skills {
+  margin-top: 15%;
+  text-align: center;
+  padding-left: 0vw;
+  padding-right: 0vw;
+  margin-bottom: 10%;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-category {
+  margin: 1.5rem;
+  margin-top: 2rem;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.skills-card {
+ background-color:  #1e1e1e; 
+ border-radius: 1.4rem;
+ box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
+ border: 0.3rem solid #333;
+ padding: 1rem;
+ transition: transform 0.4s ease;
+}
+
+.skills-card img {
+  width: 8rem;
+  height: 8rem;
+  margin: 1rem;
+  object-fit: contain; /* Ensure image is resized to fit */
+}
+
+#my-skills h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.skills-card:hover {
+  transform: translateY(-1rem);
+  background-color:  #72becf;
+  border: 0.3rem solid #e5e5e5;
+}
+
+.skills-card:hover h2 {
+  color: #1b1c25;
 }
