@@ -324,4 +324,5 @@ a {
   transform: translateY(-1rem);
   background-color:  #72becf;
   border: 0.3rem solid #e5e5e5;
+  cursor: pointer;
 }
