@@ -326,3 +326,39 @@ a {
   border: 0.3rem solid #e5e5e5;
   cursor: pointer;
 }
+
+#contact-me {
+  margin-top: 18%;
+}
+
+#contact-me h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 1.3rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 20%;
+}
+
+.contact-container p {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #b8b5b5;
+}
+
+.contact-container h3 {
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.contact-media {
+  margin-top: 1.2rem;
+}
+
