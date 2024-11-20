@@ -278,3 +278,45 @@ a {
 .skills-card:hover h2 {
   color: #1b1c25;
 }
+
+#my-resume {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 25vw;
+  padding-right: 25vw;
+  margin-bottom: 10%;
+  align-items: center;
+}
+
+#my-resume h1 {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+
+#my-resume img {
+  width: 100%;
+  margin-top: 2rem;
+  border-radius: 1.4rem;
+  box-shadow: 0 1rem 2rem rgba(114, 190, 207, 0.4);
+  border: 0.3rem solid #72becf;
+}
+
+#my-resume button {
+  background-color:  #1e1e1e; 
+  color: #fff;
+  border-radius: 1.4rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
+  border: 0.3rem solid #333;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  transition: transform 0.4s ease;
+}
+
+#my-resume button:hover {
+  transform: translateY(-1rem);
+  background-color:  #72becf;
+  border: 0.3rem solid #e5e5e5;
+}
