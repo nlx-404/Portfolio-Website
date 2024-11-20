@@ -107,7 +107,8 @@ a {
 .sticky-nav {
   position: fixed;
   bottom: 3%;
-  left: 44%;
+  left: 50%;
+  transform: translateX(-50%);
   border: 0.2rem solid #e5e5e5;
   padding: 0.7%;
   background: linear-gradient(to bottom, #1b1c25, #1d1e27);
