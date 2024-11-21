@@ -373,3 +373,35 @@ a {
     height: 33vh;
   }
 }
+
+/* window split into two on my 27 inch monitor */
+@media (max-width: 1265px) {
+  #welcome img {
+    border-radius: 3%;
+    height: 50vh;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 3%;
+  }
+
+  #welcome {
+    margin-top: 14%;
+  }
+
+  #about-me {
+    margin-top: 30%;
+  }
+
+  #my-skills {
+    margin-top: 30%;
+  }
+
+  #my-resume {
+    margin-top: 30%;
+  }
+
+  #contact-me {
+    margin-top: 42%;
+    margin-bottom: 42%;
+  }
+}
