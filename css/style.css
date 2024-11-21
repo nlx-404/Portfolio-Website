@@ -406,7 +406,7 @@ a {
   }
 }
 
-@media (max-width: 810px){
+@media (max-width: 1366px){
   #welcome img {
     height: 42vh;
     padding-bottom: 7%;
