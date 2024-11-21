@@ -488,7 +488,7 @@ a {
   #welcome img {
     margin: 0;
     padding: 0;
-    margin-top: 20%;
+    margin-top: 21%;
   }
 
   #about-me {
@@ -521,7 +521,7 @@ a {
     margin: 1rem;
     object-fit: contain; /* Ensure image is resized to fit */
   }
-    
+
   #my-resume h1 {
     font-size: 3rem;
   }
@@ -529,10 +529,9 @@ a {
   #my-resume img {
     width: 130%;
   }
-  
+
   #my-resume button {
     font-size: 1rem;
-    
   }
 
   #contact-me h2 {
