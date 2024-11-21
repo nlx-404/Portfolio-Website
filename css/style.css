@@ -405,3 +405,50 @@ a {
     margin-bottom: 42%;
   }
 }
+
+@media (max-width: 810px){
+  #welcome img {
+    height: 42vh;
+    padding-bottom: 7%;
+  }
+
+  #welcome h1 {
+    font-size: 5rem;
+  }
+
+  #welcome p {
+    font-size: 1.4rem;
+  }
+
+  .welcome-container {
+    margin-top: 13%;
+    height: 50vh;
+    padding-left: 1%;
+  }
+
+  #about-me {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  #my-resume img {
+    width: 110%;
+  }
+
+  #contact-me {
+    margin-top: 45%;
+    margin-bottom: 59%;
+  }
+
+  #datetime {
+   padding-right: 2%; 
+   padding-top: 1%;
+   padding-bottom: 1%;
+  }
+
+  .my-name {
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+}
