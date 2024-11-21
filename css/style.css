@@ -10,6 +10,8 @@ html {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
   font-size: 1.4rem;
   padding-top: 1%;
   padding-left: 1%;
@@ -21,6 +23,10 @@ header {
   border-radius: 1.2rem;
   color: #e5e5e5;
   font-weight: 400;
+}
+
+#datetime {
+  margin-right: 1%;
 }
 
 body {
@@ -101,7 +107,6 @@ a {
 .social-icons i:hover {
   color: #72becf;
   transform: scale(1.3);
-  
 }
 
 .sticky-nav {
@@ -173,7 +178,7 @@ a {
 }
 
 .terminal {
-  background-color: #1e1e1e; 
+  background-color: #1e1e1e;
   border-radius: 1.4rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   border: 0.3rem solid #333;
@@ -188,11 +193,10 @@ a {
   border-top-left-radius: 1.1rem;
   border-top-right-radius: 1.1rem;
   color: #fff;
-  position: absolute; 
-  top: 0; 
+  position: absolute;
+  top: 0;
   left: 0;
   right: 0;
-
 }
 
 .close-btn,
@@ -209,17 +213,17 @@ a {
 }
 
 .min-btn {
-  background-color: #ffbd2e; 
+  background-color: #ffbd2e;
 }
 
 .max-btn {
-  background-color: #27c93f; 
+  background-color: #27c93f;
 }
 
 .terminal-title {
   font-size: 1rem;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
   color: #ccc;
   text-align: center;
 }
@@ -255,12 +259,12 @@ a {
 }
 
 .skills-card {
- background-color:  #1e1e1e; 
- border-radius: 1.4rem;
- box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
- border: 0.3rem solid #333;
- padding: 1rem;
- transition: transform 0.4s ease;
+  background-color: #1e1e1e;
+  border-radius: 1.4rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
+  border: 0.3rem solid #333;
+  padding: 1rem;
+  transition: transform 0.4s ease;
 }
 
 .skills-card img {
@@ -277,7 +281,7 @@ a {
 
 .skills-card:hover {
   transform: translateY(-1rem);
-  background-color:  #72becf;
+  background-color: #72becf;
   border: 0.3rem solid #e5e5e5;
 }
 
@@ -310,7 +314,7 @@ a {
 }
 
 #my-resume button {
-  background-color:  #1e1e1e; 
+  background-color: #1e1e1e;
   color: #fff;
   border-radius: 1.4rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
@@ -323,7 +327,7 @@ a {
 
 #my-resume button:hover {
   transform: translateY(-1rem);
-  background-color:  #72becf;
+  background-color: #72becf;
   border: 0.3rem solid #e5e5e5;
   cursor: pointer;
 }
@@ -363,10 +367,9 @@ a {
   margin-top: 1.2rem;
 }
 
+/* Macbook */
 @media (max-width: 2560px) {
   .welcome-container {
     height: 33vh;
   }
-} 
-
-
+}
