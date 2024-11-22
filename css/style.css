@@ -34,14 +34,26 @@ html {
   animation: fadeIn 3s forwards;
 }
 
-.letter:nth-child(1) { animation-delay: 0s;}
-.letter:nth-child(2) { animation-delay: 0.2s;}
-.letter:nth-child(3) { animation-delay: 0.4s;}
-.letter:nth-child(4) { animation-delay: 0.6s;}
+.letter:nth-child(1) {
+  animation-delay: 0s;
+}
+.letter:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.letter:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.letter:nth-child(4) {
+  animation-delay: 0.6s;
+}
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .hide {
@@ -49,8 +61,13 @@ html {
 }
 
 @keyframes fadeOut {
-  from {opacity: 1;}
-  to {opacity: 0; visibility: hidden;}
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 header {
@@ -507,6 +524,10 @@ a {
     margin-right: 1.7%;
   }
 
+  .social-icons {
+    font-size: 2.15rem;
+  }
+
   #welcome {
     display: flex;
     align-items: center;
@@ -592,4 +613,3 @@ a {
     padding-right: 1rem;
   }
 }
-
