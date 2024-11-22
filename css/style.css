@@ -554,6 +554,8 @@ a {
     margin: 0;
     padding: 0;
     margin-top: 23%;
+    width: 60%;
+    height: auto;
   }
 
   #about-me {
