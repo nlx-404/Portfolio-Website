@@ -537,7 +537,7 @@ a {
 
   .welcome-container {
     margin: 0;
-    margin-top: 0%;
+    margin-top: 18vh;;
     height: 18vh;
   }
 
@@ -554,6 +554,8 @@ a {
     margin: 0;
     padding: 0;
     margin-top: 23%;
+    width: 50%;
+    height: auto;
   }
 
   #about-me {
