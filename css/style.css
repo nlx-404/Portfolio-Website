@@ -48,8 +48,12 @@ html {
 }
 
 @keyframes slideIn {
-  0% {transform: translateX(-100%);}
-  100% {transform: translateX(0);}
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes fadeIn {
@@ -206,6 +210,9 @@ a {
 
 .sticky-nav a:hover {
   color: #72becf;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transform: scale(1.05);
 }
 
 .fade-in {
@@ -227,7 +234,6 @@ a {
   padding-right: 25vw;
   margin-bottom: 10%;
 }
-
 
 #about-me h1 {
   font-size: 5rem;

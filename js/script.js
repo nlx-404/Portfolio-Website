@@ -30,7 +30,7 @@ setTimeout(() => {
   document.querySelector(".boot-screen").remove();
 }, 3000);
 
-// Animation for sections 
+// Animation for sections
 
 const fadeIn = document.querySelectorAll(".fade-in");
 

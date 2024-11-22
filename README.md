@@ -6,5 +6,6 @@
 ---
 
 # Video Demo
+
 Here is a video demo of what the webpage looks like
 ![Demo GIF](demo_media/portfolio-demo.gif)
