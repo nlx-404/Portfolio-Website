@@ -436,7 +436,7 @@ a {
 }
 
 /* window split into two on my 27 inch monitor */
-@media (max-width: 1265px) {
+/* @media (max-width: 1265px) {
   #welcome img {
     border-radius: 3%;
     height: 50vh;
@@ -465,7 +465,7 @@ a {
     margin-top: 42%;
     margin-bottom: 42%;
   }
-}
+} */
 
 /* iPad. Does not work on ipad pros just yet*/
 @media (max-width: 810px) {
