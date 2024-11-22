@@ -519,7 +519,7 @@ a {
 /* Iphones */
 @media (max-width: 428px) {
   header {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-top: 1.7%;
   }
 
