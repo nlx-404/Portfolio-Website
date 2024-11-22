@@ -9,5 +9,5 @@ Feel free to connect with me whether you're an employer or a fellow programmer! 
 ## Video Demo
 Here is a video demo of what the webpage looks like
 <video width="600" controls>
-    <source src="/videos/portfolio-demo.mp4" type="video/mp4">
+    <source src="videos/portfolio-demo.mp4" type="video/mp4">
 </video>
