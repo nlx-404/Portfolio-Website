@@ -208,6 +208,17 @@ a {
   color: #72becf;
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(4rem);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 #about-me {
   margin-top: 15%;
   display: flex;
@@ -216,6 +227,7 @@ a {
   padding-right: 25vw;
   margin-bottom: 10%;
 }
+
 
 #about-me h1 {
   font-size: 5rem;

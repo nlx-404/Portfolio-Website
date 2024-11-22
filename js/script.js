@@ -29,3 +29,24 @@ setTimeout(() => {
 setTimeout(() => {
   document.querySelector(".boot-screen").remove();
 }, 3000);
+
+// Animation for sections 
+
+const fadeIn = document.querySelectorAll(".fade-in");
+
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // When the section is in view, add the "visible" class to show it
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // Stop watching once it's in view
+      }
+    });
+  },
+  {
+    threshold: 0.2, // Trigger when 50% of the section is in view
+  }
+);
+
+fadeIn.forEach((element) => observer.observe(element));
