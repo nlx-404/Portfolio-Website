@@ -125,7 +125,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  animation: fadeIn 4s forwards;
+  animation: fadeIn 3s forwards;
   animation-delay: 2s;
 }
 
