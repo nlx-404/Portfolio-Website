@@ -8,4 +8,4 @@ Feel free to connect with me whether you're an employer or a fellow programmer! 
 
 ## Video Demo
 Here is a video demo of what the webpage looks like
-https://github.com/nlx-404/Portfolio-Website/blob/main/videos/portfolio-demo.mp4
+![Demo GIF](demo_media/portfolio-demo.gif)
