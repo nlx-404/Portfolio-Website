@@ -28,7 +28,7 @@ setTimeout(() => {
 // Remove the boot screen from the DOM
 setTimeout(() => {
   document.querySelector(".boot-screen").remove();
-}, 3000);
+}, 3500);
 
 // Animation for sections
 
