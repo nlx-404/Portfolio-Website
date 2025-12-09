@@ -24,33 +24,37 @@
       </div>
     </div>
 
-    <div>
-      <header>
-        <div class="my-name">NOEL ARDELEAN</div>
-        <span id="datetime"></span>
-      </header>
-    </div>
-
-    <section id="welcome">
-      <div class="welcome-container">
-        <h1>Welcome to my portfolio.</h1>
-        <p>Scroll down below to get to know me.</p>
-
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/noelardelean">
-            <i class="fab fa-linkedin"></i>
-          </a>
-
-          <a href="https://github.com/nlx-404">
-            <i class="fab fa-github"></i>
-          </a>
-
-          <a href="https://www.instagram.com/noelardelean">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
+    <section class="fade-in" id="intro">
+      <div class="profile">
+        <img src="images/me.jpg" alt="A picture of me" />
       </div>
-      <img src="images/me.jpg" alt="A picture of me" />
+
+      <h1 class="intro-name">Noel Ardelean</h1>
+      <p class="intro-subtitle">
+        Programmer. Student. Cybersecurity Enthusiast
+      </p>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/noelardelean">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/nlx-404">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.instagram.com/noelardelean">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+      <a
+        href="images/Noel_Ardelean_Resume.pdf"
+        download="Noel_Ardelean_Resume"
+        class="resume-btn"
+      >
+        <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+      </a>
     </section>
 
     <section class="fade-in" id="about-me">
@@ -104,8 +108,8 @@
           </div>
 
           <div class="skills-card">
-            <img src="images/html5-logo.png" alt="HTML Logo" />
-            <h2>HTML</h2>
+            <img src="images/php-logo.png" alt="PHP Logo" />
+            <h2>PHP</h2>
           </div>
 
           <div class="skills-card">
@@ -121,36 +125,6 @@
           <div class="skills-card">
             <img src="images/electron-logo.png" alt="Electron Logo" />
             <h2>Electron</h2>
-          </div>
-        </div>
-
-        <div class="skills-category">
-          <h2>Operating Systems</h2>
-        </div>
-        <div class="skills-list">
-          <div class="skills-card">
-            <img src="images/linux-logo.png" alt="Linux Logo" />
-            <h2>Linux</h2>
-          </div>
-
-          <div class="skills-card">
-            <img src="images/finder-logo.png" alt="MacOS/Finder Logo" />
-            <h2>MacOS</h2>
-          </div>
-
-          <div class="skills-card">
-            <img src="images/windows-logo.png" alt="Windows Logo" />
-            <h2>Windows</h2>
-          </div>
-
-          <div class="skills-card">
-            <img src="images/ios-logo.png" alt="iOS Logo" />
-            <h2>iOS</h2>
-          </div>
-
-          <div class="skills-card">
-            <img src="images/android-logo.png" alt="Android Logo" />
-            <h2>Android</h2>
           </div>
         </div>
 
@@ -184,12 +158,237 @@
       </div>
     </section>
 
-    <section class="fade-in" id="my-resume">
-      <h1>My Resume/CV</h1>
-      <img src="images/resume.png" alt="Picture of CV/Resume" />
-      <a href="images/Noel_Ardelean_Resume.pdf" download="Noel_Ardelean_Resume">
-        <button>Download Resume/CV</button>
-      </a>
+    <section class="fade-in" id="homelab">
+      <h2>Homelab Wiki</h2>
+      <div class="wiki-container">
+        <div class="wiki-sidebar">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="#wiki-infrastructure">Infrastructure</a></li>
+            <li><a href="#wiki-services">Services</a></li>
+            <li><a href="#wiki-future">Future Plans</a></li>
+          </ul>
+        </div>
+
+        <div class="wiki-content">
+          <div class="wiki-header">
+            <span class="status-dot"></span>System Online
+          </div>
+
+          <h3 id="wiki-infrastructure">Infrastructure Overview</h3>
+          <p>
+            The core of my homelab is built using a
+            <b>Dell Optiplex 3040 Micro</b>. It runs on <b>Proxmox VE</b> and
+            this allows me to manage backups and run virtual machines
+            effortlessly.
+          </p>
+
+          <div class="wiki-image-wrapper">
+            <img
+              src="images/network-diagram.png"
+              alt="Homelab Network Topology"
+            />
+          </div>
+          <p>Currently I run two Virtual Machines (VMs):</p>
+
+          <ul class="wiki-list">
+            <li>
+              <b>VM 1:</b> Running <b>Fedora Server</b>. I run all my services
+              here using <b>docker containers</b>.
+            </li>
+            <li>
+              <b>VM 2:</b> Running <b>Home Assistant OS</b>. This allows me to
+              run and automate majority of my smart home devices locally and
+              offline with nice dashboards.
+            </li>
+          </ul>
+
+          <hr class="wiki-divider" />
+
+          <h3 id="wiki-services">My Services</h3>
+          <p>
+            Here is a breakdown of the specific applications running on my
+            server.
+          </p>
+
+          <div class="service-item">
+            <h4>1. Home Assistant</h4>
+
+            <div class="wiki-image-wrapper">
+              <img
+                src="images/home-assistant.jpg"
+                alt="Home Assistant Interface"
+              />
+            </div>
+
+            <p>
+              I use <b>Home Assistant</b> for automation and local control of my
+              smart devices. Most of my setup runs offline, so everything keeps
+              working even if the internet is down.
+            </p>
+
+            <div class="wiki-image-wrapper">
+              <img
+                src="images/home-assistant-tablet.jpg"
+                alt="Wall Mounted Dashboard"
+              />
+            </div>
+
+            <p>
+              I also use a wall-mounted dashboard for quick access. It features
+              a <b>To-do list</b> and a <b>News Feed</b> to maximise
+              functionality. The tablet I use is the Lenovo Tab M11 which I
+              picked up cheap for Black Friday.
+            </p>
+          </div>
+
+          <hr class="wiki-divider-subtle" />
+
+          <div class="service-item">
+            <h4>2. Homepage</h4>
+            <div class="wiki-image-wrapper">
+              <img src="images/homepage.jpg" alt="Homepage Dashboard" />
+            </div>
+            <p>
+              My start page for all my services. It allows me to access all my
+              self-hosted services and important bookmarks in one place. I
+              utilise the widgets feature to quickly glance at information about
+              my services. I use the Basic Auth feature in Nginx Proxy Manager
+              to require a password to access the dashbaord.
+            </p>
+          </div>
+
+          <hr class="wiki-divider-subtle" />
+
+          <div class="service-item">
+            <h4>3. Glance</h4>
+            <div class="wiki-image-wrapper">
+              <img src="images/glance.jpg" alt="Glance Feed" />
+            </div>
+            <p>
+              A minimal feed + news reader. I use this to track news and RSS
+              feeds without the bloat. It serves me content that actually
+              interests me without any ads or intrusiveness. I also use this to
+              keep track of updates that any of my hosted services receive.
+            </p>
+          </div>
+
+          <hr class="wiki-divider-subtle" />
+
+          <div class="service-item">
+            <h4>4. Firefly III</h4>
+            <p>
+              A self-hosted finance tracker. I use this to budget and keep track
+              of my personal finances and expenses.
+            </p>
+          </div>
+
+          <hr class="wiki-divider-subtle" />
+
+          <div class="service-item">
+            <h4>5. Nginx Proxy Manager</h4>
+            <p>
+              Handles reverse proxying to enable <b>HTTPS</b> for my services
+              using a custom domain I subscribe to annually. I use the
+              <b>DNS-01 challenge</b> through Cloudflare to translate my public
+              domain to a local IP address. This gives me valid SSL certificates
+              <b>without exposing any ports</b> to the internet as I'm quite
+              paranoid.
+            </p>
+          </div>
+
+          <hr class="wiki-divider-subtle" />
+
+          <div class="service-item">
+            <h4>6. FileBrowser Quantum</h4>
+            <p>
+              A lightweight web file manager. I use this as an alternative
+              backup method for extremely critical files I can't afford to lose.
+            </p>
+          </div>
+
+          <hr class="wiki-divider-subtle" />
+
+          <div class="service-item">
+            <h4>7. Immich</h4>
+            <p>
+              A self-hosted photo and video backup solution. I use this to
+              backup all media on my phone and use the local AI features. It
+              features face detection and object recognition which comes in very
+              handy. Also way more private than cloud options.
+            </p>
+          </div>
+
+          <hr class="wiki-divider-subtle" />
+
+          <div class="service-item">
+            <h4>8. Yamtrack</h4>
+            <div class="wiki-image-wrapper">
+              <img src="images/yamtrack.jpg" alt="Yamtrack Interface" />
+            </div>
+            <p>
+              This is used to track my media consumption. I track movies, shows,
+              books, and games. It integrates with <b>Trakt</b> to automatically
+              update data for movies and shows every 2 days. It also shows me
+              upcoming releases and I use a calendar widget on my Homepage to
+              view this.
+            </p>
+          </div>
+
+          <hr class="wiki-divider-subtle" />
+
+          <div class="service-item">
+            <h4>9. Beszel</h4>
+            <p>
+              A lightweight monitoring dashboard. It connects to my Proxmox host
+              and VMs through agents. It allows me view CPU usage, RAM usage,
+              and temperatures at a glance using a visually appealing UI.
+            </p>
+          </div>
+
+          <hr class="wiki-divider-subtle" />
+
+          <div class="service-item">
+            <h4>10. Netbird</h4>
+            <p>
+              I run the <b>Netbird Agent</b> on my machine. Using their free
+              tier, it creates a mesh VPN that allows me to remotely access my
+              local network and services securely when I am away from home.
+            </p>
+          </div>
+
+          <hr class="wiki-divider" />
+
+          <h3 id="wiki-future">Future Plans</h3>
+          <p>These are some plans I have that I will get to eventually.</p>
+          <ul class="wiki-list">
+            <li>
+              <b>Proxmox Backup Server:</b> When I have the extra budget I plan
+              to get hardware to run Proxmox Backup Server to maintain a
+              constant live backup.
+            </li>
+            <li>
+              <b>Wazuh:</b> SIEM platform for security monitoring and alerting.
+              I already attempted to deploy this but it kept frequently
+              crashing. I will revisit this again in the future.
+            </li>
+            <li>
+              <b>Frigate:</b> An NVS system that uses object detection powered
+              by AI for efficient CCTV monitoring.
+            </li>
+            <li>
+              <b>Adguard + Unbound:</b> To block ads network wide and to use a
+              privacy focused DNS resolver.
+            </li>
+            <li>
+              <b>OPNsense:</b> Firewall to manage and protect traffic across my
+              network. Hardware is quite expensive so this will have to wait.
+            </li>
+          </ul>
+
+          <hr class="wiki-divider" />
+        </div>
+      </div>
     </section>
 
     <section class="fade-in" id="contact-me">
@@ -230,15 +429,15 @@
     </section>
 
     <div class="sticky-nav">
-      <a href="#"><i class="fa-solid fa-house"></i></a>
+      <a href="#intro">Home</a>
 
-      <a href="#about-me"><i class="fa-solid fa-user"></i></a>
+      <a href="#about-me">About</a>
 
-      <a href="#my-skills"><i class="fa-solid fa-gears"></i></a>
+      <a href="#my-skills">Skills</a>
 
-      <a href="#my-resume"><i class="fa-solid fa-file"></i></a>
+      <a href="#homelab">Homelab</a>
 
-      <a href="#contact-me"><i class="fa-solid fa-message"></i></a>
+      <a href="#contact-me">Contact</a>
     </div>
 
     <script src="js/script.js"></script>

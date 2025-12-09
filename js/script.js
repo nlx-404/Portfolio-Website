@@ -1,21 +1,4 @@
-// Clock function in header
-function updateTime() {
-  let dt = new Date();
-  document.getElementById("datetime").innerHTML = dt.toLocaleString([], {
-    hour: "2-digit",
-    minute: "2-digit",
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  });
-}
-
-setInterval(updateTime, 1000);
-
-updateTime();
-
 // Boot-up screen
-
 // Disable scrolling during boot up screen
 document.body.style.overflow = "hidden";
 
@@ -45,8 +28,28 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.2, // Trigger when 50% of the section is in view
+    threshold: 0.1, // Trigger when 50% of the section is in view
   }
 );
 
 fadeIn.forEach((element) => observer.observe(element));
+
+// Fix scrolling for the wiki window
+const wikiContent = document.querySelector(".wiki-content");
+
+document.querySelectorAll(".wiki-sidebar a").forEach((link) => {
+  link.onclick = (e) => {
+    // Prevents from running if on mobile
+    if (window.innerWidth < 768) return;
+    // Stops main page from scrolling
+    e.preventDefault();
+    // Scroll the inner window
+    wikiContent.scrollTo({
+      top:
+        document.querySelector(link.getAttribute("href")).offsetTop -
+        wikiContent.offsetTop -
+        10,
+      behavior: "smooth",
+    });
+  };
+});

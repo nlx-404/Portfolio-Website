@@ -11,7 +11,7 @@ html {
 
 .boot-screen {
   position: fixed;
-  background-color: #1d1e27;
+  background: url("../images/mac.jpeg") no-repeat center center fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -24,7 +24,7 @@ html {
 
 .boot-text {
   color: #e5e5e5;
-  font-size: 2rem;
+  font-size: 3rem;
   display: flex;
 }
 
@@ -79,31 +79,40 @@ html {
   }
 }
 
-header {
+#intro {
+  text-align: center;
+  padding-top: 18vh;
+  padding-bottom: 6rem;
   display: flex;
-  justify-content: space-between;
-  font-size: 1.4rem;
-  padding-top: 1%;
-  padding-left: 1.5%;
-  padding-bottom: 1%;
-  margin: 0%;
-  background: linear-gradient(to top, #1b1c25, #1d1e27);
-  border-bottom: 0.2rem solid #e5e5e5; /* A light color for the bottom border */
-  box-shadow: 0 0.2rem 2.8rem rgba(255, 255, 255, 0.6);
-  /* border-radius: 1.2rem; */
-  color: #e5e5e5;
-  font-weight: 400;
-  clip-path: inset(0rem 0rem -3rem 0rem);
-  animation: fadeIn 2s forwards;
-  animation-delay: 2s;
+  flex-direction: column;
+  align-items: center;
 }
 
-#datetime {
-  margin-right: 1.5%;
+.profile {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 2rem;
+}
+
+.profile img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.intro-name {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro-subtitle {
+  font-size: 1.2rem;
 }
 
 body {
-  background-color: #1d1e27;
+  background: url("../images/mac.jpeg") no-repeat center center fixed;
   /* border: 0.2vw solid #72becf;
   border-radius: 1.2rem; */
 }
@@ -125,48 +134,19 @@ a {
   color: #72becf;
 }
 
-#welcome {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  animation: fadeIn 3s forwards;
-  animation-delay: 2s;
-}
-
-.welcome-container {
-  height: 20vh;
-  margin: 0;
-  padding: 0;
-  margin-left: 2%;
-}
-
-#welcome h1 {
-  font-size: 6rem;
-  text-align: center;
-}
-
-#welcome p {
-  font-size: 1.7rem;
-  text-align: center;
-  padding-top: 2vh;
-}
-
-#welcome img {
-  border-radius: 3%;
-  height: 70vh;
-  margin-top: 5%;
-  margin-left: 10%;
-  margin-right: 3%;
-}
-
 .social-icons {
   font-size: 2.5rem;
   margin: 0;
   padding: 0;
   padding-bottom: 1%;
   text-align: center;
-  margin-top: 1%;
-  border-bottom: 0.2rem solid #e5e5e5;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 4px;
+  width: 100%;
 }
 
 .social-icons a {
@@ -184,35 +164,33 @@ a {
   transform: scale(1.3);
 }
 
-.sticky-nav {
-  position: fixed;
-  bottom: 3%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 0.2rem solid #e5e5e5;
-  padding: 0.7%;
-  background: linear-gradient(to bottom, #1b1c25, #1d1e27);
-  border-radius: 1.2rem;
-  display: flex;
-  align-items: center;
-  animation: fadeIn 2s forwards;
-  animation-delay: 2s;
-}
-
-.sticky-nav a {
-  text-decoration: none;
-  font-size: 1.6rem;
-  padding: 0.5rem;
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
-  color: #e5e5e5;
-}
-
-.sticky-nav a:hover {
+.resume-btn {
+  margin-top: 1rem;
+  padding: 12px 28px;
+  border-radius: 50px;
   color: #72becf;
-  box-shadow: 0 1rem 2rem rgba(0,0,0,1);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  transform: scale(1.05);
+  background: rgba(42, 52, 83, 0.3);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(42, 52, 83, 0.6);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 0.4s ease;
+}
+
+.resume-btn:hover {
+  transform: translateY(-1rem);
+  background: rgba(42, 52, 83, 0.3);
+  border: 1px solid rgba(42, 52, 83, 0.6);
+  box-shadow: 0 0 20px rgba(114, 190, 207, 0.4);
+  cursor: pointer;
 }
 
 .fade-in {
@@ -232,13 +210,14 @@ a {
   flex-direction: column;
   padding-left: 25vw;
   padding-right: 25vw;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
 }
 
 #about-me h1 {
-  font-size: 5rem;
+  font-size: 4rem;
+  letter-spacing: -2px;
   text-align: center;
-  margin-bottom: 1.3rem;
+  margin-bottom: 2.5rem;
 }
 
 #about-me p {
@@ -269,16 +248,20 @@ a {
 }
 
 .terminal {
-  background-color: #1e1e1e;
+  background: rgba(42, 52, 83, 0.5);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
   border-radius: 1.4rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-  border: 0.3rem solid #333;
+  border: 0.3rem solid rgb(54, 52, 65);
   padding: 2rem;
   position: relative;
+  max-width: 760px;
+  margin: 0 auto;
 }
 
 .terminal-header {
-  background-color: #333;
+  background-color: rgb(54, 52, 65);
   display: flex;
   padding: 0.5rem 1rem;
   border-top-left-radius: 1.1rem;
@@ -329,6 +312,8 @@ a {
   padding-left: 0vw;
   padding-right: 0vw;
   margin-bottom: 10%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .skills-container {
@@ -350,10 +335,12 @@ a {
 }
 
 .skills-card {
-  background-color: #1e1e1e;
+  background: rgba(42, 52, 83, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 1.4rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
-  border: 0.3rem solid #333;
+  border: 1px solid rgba(42, 52, 83, 0.6);
   padding: 1rem;
   transition: transform 0.4s ease;
 }
@@ -366,61 +353,15 @@ a {
 }
 
 #my-skills h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
 }
 
 .skills-card:hover {
   transform: translateY(-1rem);
-  background-color: #72becf;
-  border: 0.3rem solid #e5e5e5;
-}
-
-.skills-card:hover h2 {
-  color: #1b1c25;
-}
-
-#my-resume {
-  margin-top: 15%;
-  display: flex;
-  flex-direction: column;
-  padding-left: 25vw;
-  padding-right: 25vw;
-  margin-bottom: 10%;
-  align-items: center;
-}
-
-#my-resume h1 {
-  font-size: 5rem;
-  text-align: center;
-  margin-bottom: 1.3rem;
-}
-
-#my-resume img {
-  width: 100%;
-  margin-top: 2rem;
-  border-radius: 1.4rem;
-  box-shadow: 0 1rem 2rem rgba(114, 190, 207, 0.4);
-  border: 0.3rem solid #72becf;
-}
-
-#my-resume button {
-  background-color: #1e1e1e;
-  color: #fff;
-  border-radius: 1.4rem;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
-  border: 0.3rem solid #333;
-  padding: 1rem;
-  margin-top: 2rem;
-  font-size: 1.4rem;
-  transition: transform 0.4s ease;
-}
-
-#my-resume button:hover {
-  transform: translateY(-1rem);
-  background-color: #72becf;
-  border: 0.3rem solid #e5e5e5;
-  cursor: pointer;
+  background: rgba(42, 52, 83, 0.5);
+  border: 1px solid rgba(42, 52, 83, 0.6);
+  box-shadow: 0 0 20px rgba(114, 190, 207, 0.4);
 }
 
 #contact-me {
@@ -429,7 +370,7 @@ a {
 
 #contact-me h2 {
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: 1.3rem;
 }
 
@@ -458,194 +399,268 @@ a {
   margin-top: 1.2rem;
 }
 
-/* Macbook */
-@media (max-width: 2560px) {
-  .welcome-container {
-    height: 33vh;
-  }
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: rgba(29, 30, 39, 0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  z-index: 1000;
+  animation: fadeIn 2s forwards;
+  animation-delay: 2s;
+  opacity: 0;
 }
 
-/* window split into two on my 27 inch monitor */
-/* @media (max-width: 1265px) {
-  #welcome img {
-    border-radius: 3%;
-    height: 50vh;
-    margin-top: 0%;
-    margin-left: 10%;
-    margin-right: 3%;
-  }
-
-  #welcome {
-    margin-top: 14%;
-  }
-
-  #about-me {
-    margin-top: 30%;
-  }
-
-  #my-skills {
-    margin-top: 30%;
-  }
-
-  #my-resume {
-    margin-top: 30%;
-  }
-
-  #contact-me {
-    margin-top: 42%;
-    margin-bottom: 42%;
-  }
-} */
-
-/* iPad. Does not work on ipad pros just yet*/
-@media (max-width: 810px) {
-  #welcome img {
-    height: 42vh;
-    padding-bottom: 7%;
-  }
-
-  #welcome h1 {
-    font-size: 5rem;
-  }
-
-  #welcome p {
-    font-size: 1.4rem;
-  }
-
-  .welcome-container {
-    margin-top: 13%;
-    height: 50vh;
-    padding-left: 1%;
-  }
-
-  #about-me {
-    padding-left: 10vw;
-    padding-right: 10vw;
-  }
-
-  #my-resume img {
-    width: 110%;
-  }
-
-  #contact-me {
-    margin-top: 45%;
-    margin-bottom: 59%;
-  }
-
-  #datetime {
-    padding-right: 2%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-  }
-
-  .my-name {
-    padding-left: 2%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-  }
+.sticky-nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #a8b2d1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
-/* Iphones */
-@media (max-width: 428px) {
-  header {
-    font-size: 0.9rem;
-    margin-top: 1.7%;
-  }
+.sticky-nav a:hover {
+  color: #72becf;
+  transform: translateY(0);
+}
 
-  .social-icons {
-    font-size: 2.1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
+.sticky-nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background-color: #72becf;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
 
-  #welcome {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 40%;
-  }
+.sticky-nav a:hover::after {
+  width: 100%;
+}
 
-  .welcome-container {
-    margin: 0;
-    margin-top: 9.5vh;
-    height: 18vh;
-  }
+section {
+  scroll-margin-top: 100px;
+}
 
-  #welcome h1 {
-    font-size: 2.6rem;
-  }
+#homelab {
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+#homelab h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
 
-  #welcome p {
-    font-size: 1.2rem;
-    margin-bottom: 2%;
-  }
+.wiki-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  max-width: 900px;
+  height: 72vh;
+  margin: 0 auto;
+  background: rgba(42, 52, 83, 0.5);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.4rem;
+  box-shadow: 0px 20px 50px rgb(0, 0, 0, 0.7);
+  overflow: hidden;
+}
 
-  #welcome img {
-    margin: 0;
-    padding: 0;
-    margin-top: 23%;
-    width: 48%;
+.wiki-sidebar {
+  background: rgb(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.wiki-sidebar h3 {
+  font-size: 0.85rem;
+  color: #72becf;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+}
+
+.wiki-sidebar ul {
+  list-style: none;
+}
+
+.wiki-sidebar li {
+  margin-bottom: 0.7rem;
+}
+
+.wiki-sidebar a {
+  color: #a8b2d1;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.wiki-sidebar a:hover {
+  color: #fff;
+  transform: translateX(5px);
+  text-shadow: 0 0 8px rgba(114, 190, 207, 0.2);
+}
+
+.wiki-content {
+  padding: 2.5rem;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.wiki-content b {
+  color: white;
+}
+
+.wiki-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #27c93f;
+  margin-bottom: 2rem;
+  font-family: monospace;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #27c93f;
+  border-radius: 50%;
+  box-shadow: 0 0 6px #27c93f;
+}
+
+.wiki-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.wiki-content p {
+  color: #c0c5d0;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.wiki-divider {
+  border: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 2rem 0;
+}
+
+.wiki-image-wrapper {
+  text-align: center;
+  margin: 2rem 0;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.8rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.wiki-image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+}
+
+.wiki-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.wiki-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 1rem;
+  color: #c0c5d0;
+}
+
+.wiki-list li::before {
+  content: "•";
+  color: #72becf;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.service-item {
+  margin-bottom: 2rem;
+}
+
+.service-item h4 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  border-left: 3px solid #72becf;
+  padding-left: 10px;
+}
+
+.wiki-divider-subtle {
+  border: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 2rem 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .wiki-container {
+    grid-template-columns: 1fr;
     height: auto;
+    margin: 0 1.1rem;
   }
 
-  #about-me {
-    margin-bottom: 40%;
+  .wiki-sidebar {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
   }
 
-  #about-me h1 {
-    font-size: 3rem;
+  .profile {
+    width: 240px;
+    height: 240px;
   }
 
-  #about-me p {
-    font-size: 1.2rem;
+  .profile img {
+    width: 240px;
+    height: 240px;
   }
 
-  .cursor {
-    font-size: 1.3rem;
+  .sticky-nav {
+    gap: 0;
+    justify-content: space-evenly;
   }
-
-  #my-skills {
-    margin-bottom: 20%;
-  }
-
-  #my-skills h1 {
-    font-size: 3rem;
-  }
-
-  #my-skills h2 {
-    font-size: 1.2rem;
-  }
-
-  .skills-card img {
-    width: 3rem;
-    height: 3rem;
-    margin: 1rem;
-    object-fit: contain; /* Ensure image is resized to fit */
-  }
-
-  #my-resume h1 {
-    font-size: 3rem;
-  }
-
-  #my-resume img {
-    width: 130%;
-  }
-
-  #my-resume button {
-    font-size: 1rem;
-  }
-
+  #about-me h1,
+  #my-skills h1,
+  #homelab h2,
   #contact-me h2 {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
+}
 
-  #contact-me {
-    margin-bottom: 80%;
-    margin-top: 64%;
-  }
-
-  .terminal {
-    padding-left: 1rem;
-    padding-right: 1rem;
+@media (max-width: 1300px) {
+  #about-me {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
