@@ -7,11 +7,14 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: rgb(30, 37, 86);
+  height: 100%;
 }
 
 .boot-screen {
   position: fixed;
   background: url("../images/mac.jpeg") no-repeat center center fixed;
+  background-size: cover;
   top: 0;
   left: 0;
   width: 100%;
@@ -112,10 +115,26 @@ html {
 }
 
 body {
-  background: url("../images/mac.jpeg") no-repeat center center fixed;
-  /* border: 0.2vw solid #72becf;
-  border-radius: 1.2rem; */
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/mac.jpeg") no-repeat center center;
+  background-size: cover;
+  background-color: rgb(30, 37, 86);
+  z-index: -1;
+  will-change: transform;
+}
+
 h1,
 h2 {
   color: #e5e5e5; /* Off-white for headings */
@@ -624,6 +643,10 @@ section {
 
 /* Mobile */
 @media (max-width: 768px) {
+  .boot-screen {
+    background-attachment: scroll !important;
+  }
+
   .wiki-container {
     grid-template-columns: 1fr;
     height: auto;
