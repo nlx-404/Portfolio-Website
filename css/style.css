@@ -647,6 +647,26 @@ section {
     background-attachment: scroll !important;
   }
 
+  .intro-name {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .intro-subtitle {
+    font-size: 1.1rem;
+    margin: 0 1rem;
+  }
+
+  #about-me p {
+    font-size: 1.2rem;
+    padding-top: 2vh;
+  }
+
+  .cursor {
+    font-size: 1.4rem;
+    margin-left: 3px;
+  }
+
   .wiki-container {
     grid-template-columns: 1fr;
     height: auto;
